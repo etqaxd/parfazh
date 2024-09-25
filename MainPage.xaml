@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="parfazh.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            BackgroundColor="#D0D0D0"
+            Padding="30,0"
+            Spacing="25">
+            
+            <Image
+                Source="parf_icon.png"
+                HeightRequest="500"
+                Aspect="AspectFit"
+                SemanticProperties.Description="dot net bot in a race car number eight"
+                WidthRequest="228"
+                />
+
+                <Image
+                Source="main_bar.png"
+                HeightRequest="55"
+                Aspect="AspectFit"
+                WidthRequest="540"
+                VerticalOptions="Start"
+                HorizontalOptions="Center"
+                Margin="0,70"
+                />
+
+
+            <HorizontalStackLayout
+                    
+                    Padding="170,0"
+                    Spacing="20"
+                    Margin="-150"
+                    >
+
+                
+
+                <Button 
+                        Background="#989898"
+                        x:Name="ChatButton"
+                        ImageSource="chat_icon.png"
+                        HorizontalOptions="Fill"
+                        BackgroundColor="#D0D0D0"
+                        WidthRequest="55"
+                        HeightRequest="55"
+                        Clicked="OnChatClicked"
+                        
+                        />
+
+                        <Button
+                        Background="#989898"    
+                        x:Name="CalendarButton"
+                        ImageSource="calendar_icon.png"
+                        HorizontalOptions="Fill"
+                        BackgroundColor="#D0D0D0"
+                        WidthRequest="55"
+                        HeightRequest="55" />
+
+                        <Button
+                        Background="#989898"    
+                        x:Name="TestButton"
+                        ImageSource="tests_button.png"
+                        HorizontalOptions="Fill"
+                        BackgroundColor="#D0D0D0"
+                        WidthRequest="55"
+                        HeightRequest="55"
+                        Clicked="OnTestClicked"/>
+
+                        <Button
+                        Background="#989898"    
+                        x:Name="RegaButton"
+                        ImageSource="profile_icon.png"
+                        HorizontalOptions="Fill"
+                        BackgroundColor="#D0D0D0"
+                        WidthRequest="55"
+                        HeightRequest="55"
+                        Clicked="OnRegistartionClicked"
+                        />
+
+
+
+            </HorizontalStackLayout>
+
+                    
+
+        </VerticalStackLayout>
+        
+    </ScrollView>
+
+</ContentPage>
